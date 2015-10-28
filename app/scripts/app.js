@@ -22,18 +22,15 @@ angular
     $routeProvider
       .when('/login', {
         templateUrl: 'scripts/login/views/login.html',
-        controller: 'LoginCtrl',
-        controllerAs: 'login'
+        controller: 'LoginCtrl'
       })
       .when('/main', {
         templateUrl: 'scripts/main/views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controller: 'MainCtrl'
       })
       .when('/form', {
         templateUrl: 'scripts/form/views/form.html',
-        controller: 'formCtrl',
-        controllerAs: 'form'
+        controller: 'formCtrl'
       })
       .otherwise({
         redirectTo: '/login'

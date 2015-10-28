@@ -18,13 +18,14 @@ body {
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+  //padding-left: 15px;
+  //padding-right: 15px;
 }
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  //border-bottom: 1px solid #e5e5e5;
+  background-color:black;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -70,7 +71,8 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    width: 100%;
+    padding:0;
   }
 
   /* Remove the padding we set earlier */
@@ -88,4 +90,22 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.navbar-default{
+  background-color:black;
+}
+
+
+.sub-header{
+  background-color: #337ab7;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.table{
+  width:95%;
+  margin: 0 auto; 
 }
