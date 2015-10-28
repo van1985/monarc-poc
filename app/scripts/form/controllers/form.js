@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name monarcPocApp.controller:AboutCtrl
+ * @name monarcPocApp.controller:MainCtrl
  * @description
- * # AboutCtrl
+ * # MainCtrl
  * Controller of the monarcPocApp
  */
 angular.module('monarcPocApp')
-  .controller('AboutCtrl', function () {
+  .controller('FormCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

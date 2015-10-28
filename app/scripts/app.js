@@ -20,17 +20,22 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
+      .when('/login', {
+        templateUrl: 'scripts/login/views/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
+      .when('/main', {
+        templateUrl: 'scripts/main/views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/form', {
+        templateUrl: 'scripts/form/views/form.html',
+        controller: 'formCtrl',
+        controllerAs: 'form'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/login'
       });
   });
