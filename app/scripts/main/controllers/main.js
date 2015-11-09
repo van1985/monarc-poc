@@ -8,10 +8,11 @@
  * Controller of the monarcPocApp
  */
 angular.module('monarcPocApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function (JobsSrvApi, $scope) {
+    
+  	JobsSrvApi.getData().then(function(response){
+  		console.log(response);
+  		$scope.jobs=response.jobs;
+  	});
+
   });

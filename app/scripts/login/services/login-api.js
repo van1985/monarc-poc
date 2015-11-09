@@ -1,0 +1,35 @@
+'use strict';
+
+angular.module('monarcPocApp').service('LoginSrvApi', function($http, $q) {
+
+  var service = {};
+
+  service.login = function(username, password) {
+    var deferred = $q.defer();
+
+    $http({
+      method: 'POST',
+      url: './scripts/login/services/login.json',
+      //url: 'http://localhost/omt-web/auth/login',
+      data: 
+      {
+        username: username,
+        password: password
+      }
+    })
+    .success(
+      function(response) {
+        deferred.resolve(response);
+      })
+    .error(
+      function(response) {
+        deferred.reject(response.responseStatus.errorMessage);
+      });
+
+    return deferred.promise;
+  };
+
+
+  return service;
+
+});

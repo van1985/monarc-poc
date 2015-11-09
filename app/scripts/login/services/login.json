@@ -1,0 +1,7 @@
+{
+	"uuid": "bac7caf7-d4fe-4e79-a39e-0e15bd70b58a",
+	"username": "admin",
+	"rolePath": "SUPERADMIN",
+	"email": "use@example.com",
+	"parentOrganizationPath": "/omt_root/organizations/PrnNewsWire/childOrganizations/OrganizationABC/childOrganizations/OrganizationXYZ"
+}

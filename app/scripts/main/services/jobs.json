@@ -1,0 +1,58 @@
+{
+	"page": 1,
+	"pageCount": 10,
+	"jobs": [
+		{
+			"path": "/omt_root/organizations/PrnNewsWire/childOrganizations/MediaStudio/6e706c7a-cf68-4149-bee7-9f2594b85272",
+			"nodeName": "6e706c7a-cf68-4149-bee7-9f2594b85272",
+			"uuid": "12d07a9a-cd84-490e-981f-1fa9c88755f9",
+			"jobId": "ABC001",
+			"organizationName": "CocaCola",
+			"headline": "This is the HEADLINE",
+			"workflowState": "Published/Pending",
+			"jobType": "MNR",
+			"language": "English",
+			"firstPublishDate": "2015-11-25 11:00:00",
+			"lastMofifiedDate": "2015-11-25 11:00:00"
+		},
+		{
+			"path": "/omt_root/organizations/PrnNewsWire/37536506-8c86-4048-aa19-6f5b30c8047c",
+			"nodeName": "37536506-8c86-4048-aa19-6f5b30c8047c",
+			"uuid": "f3d59125-b82b-4712-843e-88191a4707e6",
+			"jobId": "0001XYZ",
+			"organizationName": "Honda Motors",
+			"headline": "Best moto",
+			"workflowState": "Approved",
+			"jobType": "ARC",
+			"language": "Turkish",
+			"firstPublishDate": "2012-08-11 09:10:00",
+			"lastMofifiedDate": "2013-11-25 11:00:00"
+		},
+		{
+			"path": "/omt_root/organizations/PrnNewsWire/childOrganizations/OrganizationABC/childOrganizations/OrganizationXYZ/2ab63bd2-f17a-4796-96d5-6c7ca2d040c2",
+			"nodeName": "2ab63bd2-f17a-4796-96d5-6c7ca2d040c2",
+			"uuid": "f3d59125-b82b-4712-843e-88191a4707e6",
+			"jobId": "0001XYZ",
+			"organizationName": "Honda Motors",
+			"headline": "Best moto",
+			"workflowState": "Approved",
+			"jobType": "ARC",
+			"language": "Turkish",
+			"firstPublishDate": "2012-08-11 09:10:00",
+			"lastMofifiedDate": "2013-11-25 11:00:00"
+		},
+		{
+			"path": "/omt_root/organizations/PrnNewsWire/childOrganizations/OrganizationABC/childOrganizations/OrganizationXYZ/childOrganizations/OrganizationWWW/abfdb69e-64c0-4d5f-a957-8cb4c5b80495",
+			"nodeName": "abfdb69e-64c0-4d5f-a957-8cb4c5b80495",
+			"uuid": "f3d59125-b82b-4712-843e-88191a4707e6",
+			"jobId": "AeIoU123",
+			"organizationName": "Toyota",
+			"headline": "N/A",
+			"workflowState": "New",
+			"jobType": "ARC",
+			"language": "Spanish",
+			"firstPublishDate": "2012-08-11 09:10:00",
+			"lastMofifiedDate": "2013-11-25 11:00:00"
+		}
+	]
+}
