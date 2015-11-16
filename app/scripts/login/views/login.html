@@ -1,13 +1,43 @@
-<div class="login">
+<div class="login l-background">
 <div class="wrapper">
     <form class="form-signin">       
-      <h2 class="form-signin-heading">Please login</h2>
-      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" ng-model="username" />
-      <input type="password" class="form-control" name="password" placeholder="Password" required="" ng-model="password"/>      
-      <label class="checkbox">
-        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-      </label>
-      <div class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Login</div>   
+      <div class="black-row"></div>
+      <div class="blue-row color"></div>
+      <div class="parent">
+        <div class="narrow">
+          <input type="text" class="form-control general-input-att mg-30" name="username" placeholder="Email Address" required="" ng-model="username" 
+           />
+          <input type="password" class="form-control general-input-att mg-10" name="password" placeholder="Password" required="" ng-model="password"  />      
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+          </label>
+          <div class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Login</div>  
+          <div class="mg-10">
+            <a href="#/recoverpass?evt=forget" class="link-color">
+            Did you forget your password?
+            </a>
+          </div>
+          <div class="mg-10 mg-60" >
+            <a href="#/recoverpass?evt=unlock" class="link-color">
+              Unlock your account
+            </a>
+          </div>
+        </div>
+        <div class="wide">
+          <div class="box">
+            <div class="title-text">This is UAT</div>
+            <div class="message">
+              <div class="mg-15">This is a message for UAT TT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer">
+        <div class="box1">800-653-5313</div>
+        <div class="box2">multivureports@multivu.com</div>
+        <div class="box3">www.multivu.com</div>
+        <div class="box4">MultiVu Inc., 2015</div>
+      </div>
     </form>
   </div>
 </div>

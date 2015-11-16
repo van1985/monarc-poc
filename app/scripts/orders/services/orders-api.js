@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('monarcPocApp').service('JobsSrvApi', function($http, $q) {
+angular.module('monarcPocApp').service('OrdersSrvApi', function($http, $q) {
 
   var service = {};
 
@@ -9,8 +9,8 @@ angular.module('monarcPocApp').service('JobsSrvApi', function($http, $q) {
 
     $http({
       method: 'GET',
-      url: './scripts/main/services/jobs.json'
-      //url: 'http://localhost/omt-web/api/jobs'
+      url: './scripts/orders/services/orders.json',
+      //url: 'http://localhost/omt-web/api/orders'
     })
     .success(
       function(response) {

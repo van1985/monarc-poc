@@ -24,13 +24,21 @@ angular
         templateUrl: 'scripts/login/views/login.html',
         controller: 'LoginCtrl'
       })
-      .when('/main', {
-        templateUrl: 'scripts/main/views/main.html',
-        controller: 'MainCtrl'
+      .when('/jobs', {
+        templateUrl: 'scripts/jobs/views/jobs.html',
+        controller: 'JobsCtrl'
+      })
+      .when('/orders', {
+        templateUrl: 'scripts/orders/views/orders.html',
+        controller: 'OrdersCtrl'
       })
       .when('/form', {
         templateUrl: 'scripts/form/views/form.html',
         controller: 'formCtrl'
+      })
+      .when('/recoverpass', {
+        templateUrl: 'scripts/recoverpass/views/recoverpass.html',
+        controller: 'recoverPassCtrl'
       })
       .otherwise({
         redirectTo: '/login'

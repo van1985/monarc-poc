@@ -3,6 +3,39 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+.full { height: 100%;}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: white !important;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+
+input, textarea{
+    background-color:#FFF;
+    color: black;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #FFF;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #FFF;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #FFF;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #FFF;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #FFF;
+}
+
+input:focus {outline:none;}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,8 +43,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+html,body{
+  height: 100%; 
+  width: 100%; 
+  margin: 0;
+}
+
 body {
   padding: 0;
+  background: rgba(81,81,81,1);
+  background: -moz-linear-gradient( rgba(81,81,81,1) 0%, rgba(161,161,161,1) 100%) !important;
+  background: -webkit-gradient(color-stop(0%, rgba(81,81,81,1)), color-stop(100%, rgba(161,161,161,1)));
+  background: -webkit-linear-gradient( rgba(81,81,81,1) 0%, rgba(161,161,161,1) 100%);
+  background: -o-linear-gradient( rgba(81,81,81,1) 0%, rgba(161,161,161,1) 100%);
+  background: -ms-linear-gradient( rgba(81,81,81,1) 0%, rgba(161,161,161,1) 100%);
+  background: linear-gradient( rgba(81,81,81,1) 0%, rgba(161,161,161,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#a1a1a1', GradientType=1 );
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
