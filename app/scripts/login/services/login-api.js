@@ -10,6 +10,7 @@ angular.module('monarcPocApp').service('LoginSrvApi', function($http, $q) {
     $http({
       method: 'POST',
       url: './scripts/login/services/login.json',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
       //url: 'http://localhost/omt-web/auth/login',
       data: 
       {
