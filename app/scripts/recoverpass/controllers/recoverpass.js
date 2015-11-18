@@ -8,6 +8,23 @@
  * Controller of the monarcPocApp
  */
 angular.module('monarcPocApp')
-  .controller('RecoverPassCtrl', function ($location , $scope) {
+  .controller('recoverPassCtrl', function ( $scope, RecoverSrvApi) {
     
+    $scope.message='';
+    $scope.recover = function(){
+    	RecoverSrvApi.recover($scope.username,$scope.email).then(function(response){
+			console.log(response);
+			if (response.errorMessage!==null){
+				$scope.message=response.errorMessage;	
+			}
+			else
+			{
+				$scope.message = response.message;
+			}
+			
+    	});
+    };
+
+
+
   });

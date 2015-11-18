@@ -1,1 +1,72 @@
 <h1>FORM</h1>
+
+<form>
+     <div>
+     	<input type="text" class="form-control general-input-att mg-30" name="client" placeholder="Client" required="" ng-model="model.client" 
+           />
+     </div>
+     <div>
+     	<textarea cols="40" rows="5" name="contact" ng-model="model.contact"></textarea>
+     </div>
+     <div>
+     	<input type="text" class="form-control general-input-att mg-30" name="orderNumber" placeholder="Order Number" required="" ng-model="model.orderNumber" 
+           />
+     </div>
+          <div>
+     	<input type="text" class="form-control general-input-att mg-30" name="jobNumber" placeholder="Job Number" required="" ng-model="model.jobNumber" 
+           />
+     </div>
+     <div>
+     	<select ng-model="model.jobType" name="jobtype">
+     		 <option value="ARC">ARC</option>
+     	</select>
+     </div>
+               <div>
+     	<input type="text" class="form-control general-input-att mg-30" name="title" placeholder="Title" required="" ng-model="model.title" 
+           />
+     </div>
+
+          <div>
+     	<select ng-model="model.template" name="template">
+     		 <option value="Left Body Player">Left Body Player</option>
+     	</select>
+     </div>
+
+          <div>
+     	<textarea cols="40" rows="5" name="instructions" ng-model="model.instructions"></textarea>
+     </div>
+
+          <div>
+     	<select ng-model="model.year" name="year">
+     		 <option value="2015">2015</option>
+			  <option value="2013">2014</option>
+     	</select>
+     	     	<select ng-model="model.month" name="month">
+     		 <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+     	</select>
+     	     	     	<select ng-model="model.day" name="day">
+     		 <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+     	</select>
+     	     	     	     	<select ng-model="model.hour" name="hour">
+     		 <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+     	</select>
+
+     	     	     	     	     	<select ng-model="model.minute" name="minute">
+     		 <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+     	</select>
+     </div>
+
+	 <div class="btn btn-lg btn-primary btn-block" type="submit" ng-click="saveOrder()">Save Order</div>
+</form>

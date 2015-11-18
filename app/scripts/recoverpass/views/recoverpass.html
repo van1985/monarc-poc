@@ -1,11 +1,12 @@
 <div class="login">
 <div class="wrapper">
     <form class="form-signin">       
-      <h2 class="form-signin-heading">Recover Pass</h2>
+      <h2 class="form-signin-heading">Enter your username or e-mail. The system will send an e-mail with your password.</h2>
       <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" ng-model="username" />
-      <input type="password" class="form-control" name="password" placeholder="E-mail" required="" ng-model="password"/>      
-      <div class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Send</div>  
-      <a class="btn btn-lg btn-primary btn-block" href="#/login">Back</a>  
+      <input type="text" class="form-control" name="email" placeholder="E-mail" required="" ng-model="email"/>      
+      <div class="btn btn-lg btn-primary btn-block" type="submit" ng-click="recover()">Send</div>  
+      <a class="btn btn-lg btn-primary btn-block" href="#/login">Back</a>
+      <div class="message">{{ message }}</div>  
     </form>
 
   </div>

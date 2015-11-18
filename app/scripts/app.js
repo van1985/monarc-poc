@@ -34,7 +34,7 @@ angular
       })
       .when('/form', {
         templateUrl: 'scripts/form/views/form.html',
-        controller: 'formCtrl'
+        controller: 'FormCtrl'
       })
       .when('/recoverpass', {
         templateUrl: 'scripts/recoverpass/views/recoverpass.html',

@@ -8,10 +8,13 @@
  * Controller of the monarcPocApp
  */
 angular.module('monarcPocApp')
-  .controller('FormCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('FormCtrl', function (FormSrvApi, $scope) {
+
+  	    $scope.saveOrder = function(){
+  	    console.log($scope.model);
+    	FormSrvApi.saveOrder($scope.model).then(function(response){
+    		$location.path('/orders');
+    	});
+    };
+
   });
