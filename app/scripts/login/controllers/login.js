@@ -8,12 +8,13 @@
  * Controller of the monarcPocApp
  */
 angular.module('monarcPocApp')
-  .controller('LoginCtrl', function ($location , $scope, LoginSrvApi) {
+  .controller('LoginCtrl', function ($location , $scope, LoginSrvApi, UserSrv) {
     
     $scope.error =false;
     $scope.login = function(){
     	LoginSrvApi.login($scope.username,$scope.password).then(function(response){
-			if (response.uuid !== null){
+			if (response.user !== null){
+				UserSrv.setUser(response.user);
 				$location.path('/main');
 			}
 			else
