@@ -17,4 +17,8 @@ angular.module('monarcPocApp')
     	});
     };
 
+    $scope.model={
+    	contact : 'Contact...',
+    	instructions: 'instructions...'
+    };
   });
