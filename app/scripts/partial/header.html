@@ -1,3 +1,4 @@
+<div ng-controller="HeaderCtrl">
       <div class="black-row">
         <div class="dropdown position">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -14,7 +15,7 @@
         <div class="item">admin: PR Newswire |</div> 
         <div class="item">preferences |</div>
         <div class="item">0 New Message |</div>
-        <div class="item">logout</div>
+        <div class="item" ng-click="logout()" style="cursor:pointer;">logout</div>
       </div>
       </div>
       <div class="blue-row color">
@@ -32,3 +33,4 @@
             <div class="other-item"></div>
           </div>
           </div>
+</div>

@@ -1,13 +1,32 @@
-<div class="login">
+<div class="recoverpass l-background">
 <div class="wrapper">
     <form class="form-signin">       
-      <h2 class="form-signin-heading">Enter your username or e-mail. The system will send an e-mail with your password.</h2>
-      <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" ng-model="username" />
-      <input type="text" class="form-control" name="email" placeholder="E-mail" required="" ng-model="email"/>      
-      <div class="btn btn-lg btn-primary btn-block" type="submit" ng-click="recover()">Send</div>  
-      <a class="btn btn-lg btn-primary btn-block" href="#/login">Back</a>
-      <div class="message">{{ message }}</div>  
-    </form>
+      <div class="black-row"></div>
+      <div class="blue-row color"></div>
+      <div style="margin-left:30px;">
+      	<h4>Enter your username or e-mail. The system will send an e-mail with your password.</h4>
+      </div>
+      <div class="parent">
 
+        <div class="narrow">
+          <input type="text" class="form-control general-input-att mg-30" name="username" placeholder="Username" required="" ng-model="username" 
+           />
+          <input type="text" class="form-control general-input-att mg-30" name="email" placeholder="Email Address" required="" ng-model="email" 
+           />      
+           <div style="display:inline-block;margin-top:20px;">
+	          <div class="btn btn-lg btn-primary btn-block" type="submit" ng-click="send()" style="float:left;">Send</div>  
+	          <a class="btn btn-lg btn-primary btn-block" href="#/login" style="float:left;margin-left:8px;">Back</a>  
+          </div>
+        </div>
+        <div class="wide">
+        </div>
+      </div>
+      <div class="l-footer">
+        <div class="box1">800-653-5313</div>
+        <div class="box2">multivureports@multivu.com</div>
+        <div class="box3">www.multivu.com</div>
+        <div class="box4">MultiVu Inc., 2015</div>
+      </div>
+    </form>
   </div>
 </div>

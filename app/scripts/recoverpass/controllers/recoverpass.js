@@ -11,7 +11,7 @@ angular.module('monarcPocApp')
   .controller('recoverPassCtrl', function ( $scope, RecoverSrvApi) {
     
     $scope.message='';
-    $scope.recover = function(){
+    $scope.send = function(){
     	RecoverSrvApi.recover($scope.username,$scope.email).then(function(response){
 			console.log(response);
 			if (response.errorMessage!==null){
