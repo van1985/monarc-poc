@@ -4,13 +4,17 @@ angular.module('monarcPocApp').service('OrdersSrvApi', function($http, $q) {
 
   var service = {};
 
-  service.getData = function() {
-    var deferred = $q.defer();
+  service.getData = function(filter,text) {
+    var deferred = $q.defer(),
+        parameters='';
+    if (filter!==''){
+      parameters='?'+filter+'='+text;
+    }
 
     $http({
       method: 'GET',
-      url: './scripts/orders/services/orders.json',
-      //url: 'http://localhost/omt-web/api/orders'
+      //url: './scripts/orders/services/orders.json',
+      url: 'http://localhost/omt-web/api/orders'+parameters
     })
     .success(
       function(response) {

@@ -10,9 +10,17 @@
 angular.module('monarcPocApp')
   .controller('OrdersCtrl', function (OrdersSrvApi, $scope) {
     
-  	OrdersSrvApi.getData().then(function(response){
-		console.log(response);
-		$scope.orders=response.orders;
-  	});
+    $scope.dropdownItm='';
+  	$scope.searchText='';
+  	$scope.search = function(){
+  		OrdersSrvApi.getData($scope.dropdownItm, $scope.searchText).then(function(response){
+			console.log(response);
+			$scope.orders=response.orders;
+  		});
+  	};
+
+  	$scope.search();
+
+  	
 
   });
