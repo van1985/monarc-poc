@@ -93,21 +93,41 @@
   		.organization-item{
   			display:inline-block;
   			width:12%;
+
+        .text{
+          text-decoration: none;
+          color:white;
+        }
   		}
 
   		.report-item{
   			display:inline-block;
   			width:7%;
+
+        .text{
+          text-decoration: none;
+          color:white;
+        }
   		}
 
   		.external-item{
   			display:inline-block;
   			width:9%;
+        
+        .text{
+          text-decoration: none;
+          color:white;
+        }        
   		}
 
   		.settings-item{
   			display:inline-block;
   			width:8%;
+
+        .text{
+          text-decoration: none;
+          color:white;
+        }
   		}
 
   		.other-item{
@@ -124,7 +144,7 @@
 
   		.title{
   			margin-left:20px;
-  			color:#357ABD;
+  			color:#5078a1;
   			font-family:Arial;
   			font-size:16px;
   		}
@@ -139,7 +159,7 @@
 
   			.title-filter{
   				font-size:13px;
-  				color:#357ABD;
+  				color:#5078a1;
   				display:inline-block;
   				float:left;
   				font-weight:bold;
@@ -157,7 +177,7 @@
 
   			.title-contains{
   				font-size:13px;
-  				color:#357ABD;
+  				color:#5078a1;
   				display:inline-block;
   				float:left;
   				font-weight:bold;
@@ -179,7 +199,7 @@
 
   		.table{
   			.thead{
-  				background-color:#357ABD;
+  				background-color:#5078a1;
   				color:white;
   				font-size:12px;
   			}
