@@ -30,7 +30,7 @@ angular.module('monarcPocApp').service('FormSrvApi', function($http, $q) {
       })
     .error(
       function(response) {
-        deferred.reject(response.responseStatus.errorMessage);
+        deferred.reject(response.errorMessage);
       });
 
     return deferred.promise;

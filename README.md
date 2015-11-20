@@ -22,7 +22,7 @@ npm install
 bower install
 ```
 
-### How to run the app   
+### How to run the app (test)   
 
 Start a local server
 

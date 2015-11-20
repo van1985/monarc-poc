@@ -51,21 +51,31 @@
                 <tbody class="tbody">
                     <tr ng-repeat="job in jobs">
                         <td>{{ job.jobId }}</td>
-                        <td>{{ job.headline }}</td>
+                        <td ng-if="job.wasPublished==false">
+                          {{ job.headline }}
+                        </td>
+                        <td ng-if="job.wasPublished==true">
+                          <a href="#" style="color:#0000AA">{{ job.headline }}</a>
+                        </td>
                         <td>{{ job.organizationName }}</td>
                         <td>
                           <div ng-class="{'state-published': job.workflowState==='Published/Pending'}">{{ job.workflowState }}</div>
                         </td>
                         <td>{{ job.jobType }}</td>
-                        <td>{{ job.language }}</td>
-                        <td>{{ job.firstPublishDate }}</td>
-                        <td>{{ job.lastMofifiedDate }}</td>
-                        <td></td>
+                        <td>{{ job.defaultLanguage.language }}</td>
+                        <td ng-if="job.firstPublishDate!==null">
+                          {{ job.firstPublishDate | date : 'dd-MMM-yy'}}
+                        </td>
+                        <td ng-if="job.firstPublishDate==null">
+                          {{ defaultDate | date : 'dd-MMM-yy'}}
+                        </td>
+                        <td>{{ job.lastMofifiedDate | date : 'dd-MMM-yy'}}</td>
+                        <td><a href="http://localhost/omt-web/com.prnewswire.multivu.omt.main.Multivu/Multivu.html?to=wsView&jobId={{job.jobId}}"><img src="../images/view.png"></a></td>
                     </tr>
                 </tbody>
             </table>
 
-        <div class="btn btn-lg btn-primary btn-block btn-job" type="submit" ng-click="login()">Create Job</div>  
+        <div class="btn btn-lg btn-primary btn-block btn-job" type="submit" ng-click="createJob()">Create Job</div>  
         </div>
 
   <div ng-include="'../scripts/partial/footer.html'"></div>

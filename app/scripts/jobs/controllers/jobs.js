@@ -19,6 +19,12 @@ angular.module('monarcPocApp')
   	});
   	};
 
+	$scope.defaultDate=Date.now();
+    
+    $scope.createJob = function(){
+      window.location = 'http://localhost/omt-web/com.prnewswire.multivu.omt.main.Multivu/Multivu.html?to=wsCreateEdit';
+    };
+
   	$scope.search();
     
   	

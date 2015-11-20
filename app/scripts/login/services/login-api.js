@@ -24,7 +24,7 @@ angular.module('monarcPocApp').service('LoginSrvApi', function($http, $q) {
       })
     .error(
       function(response) {
-        deferred.reject(response.responseStatus.errorMessage);
+        deferred.reject(response.errorMessage);
       });
 
     return deferred.promise;
@@ -45,7 +45,7 @@ angular.module('monarcPocApp').service('LoginSrvApi', function($http, $q) {
       })
     .error(
       function(response) {
-        deferred.reject(response.responseStatus.errorMessage);
+        deferred.reject(response.errorMessage);
       });
 
     return deferred.promise;

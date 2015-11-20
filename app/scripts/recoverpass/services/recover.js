@@ -9,7 +9,7 @@ angular.module('monarcPocApp').service('RecoverSrvApi', function($http, $q) {
 
     $http({
       method: 'POST',
-      url: 'http://localhost/omt-web/auth/recoverAccount',
+      url: 'http://localhost/omt-web/api/user/recoverAccount',
       headers: {'Content-Type': 'application/x-www-form-urlencoded'},
       data: 
       {
@@ -23,7 +23,7 @@ angular.module('monarcPocApp').service('RecoverSrvApi', function($http, $q) {
       })
     .error(
       function(response) {
-        deferred.reject(response.responseStatus.errorMessage);
+        deferred.reject(response.errorMessage);
       });
 
     return deferred.promise;
